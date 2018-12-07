@@ -1,32 +1,161 @@
-.App {
-  text-align: center;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 3.5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.quoteText {
+  margin: 0;
+  padding: 10px 30px;
+  font-size: 2.5ch;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.quoteAuthor {
+  font-size: 1.9ch;
+  float: right;
+  margin: 0;
+  padding: 10px 30px;
+  align-self: flex-end;
+}
+
+.button-container {
+  display: flex;
+  width: 90%;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 45px auto 5px auto;
+  user-select: none;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  font: inherit;
+  font-weight: 500;
+  user-select: none;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:active {
+  box-shadow: inset 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-social {
+  margin: 15px 5px;
+  padding: 7.5px 8px;
+}
+
+.button-quote {
+  padding: 13px 13px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.fa-quote-left {
+  padding-right: 0.5em;
+}
+
+footer {
+  color: black;
+  visibility: hidden;
+}
+
+@media (min-width: 700px) {
+  main {
+    flex-grow: 0;
+    max-width: 700px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .button-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .button-quote {
+    width: 150px;
   }
 }
+@media (max-width: 350px) {
+  main {
+    justify-content: flex-start;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
