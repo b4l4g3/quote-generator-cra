@@ -76,44 +76,6 @@ main {
 }
 
 
-
-.button-container {
-  display: flex;
-  width: 90%;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  margin: 45px auto 5px auto;
-  user-select: none;
-}
-
-.button {
-  border: none;
-  border-radius: 5px;
-  font: inherit;
-  font-weight: 500;
-  user-select: none;
-}
-
-.button:focus {
-  outline: 0;
-}
-
-.button:active {
-  box-shadow: inset 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
-}
-
-.button-social {
-  margin: 15px 5px;
-  padding: 7.5px 8px;
-}
-
-.button-quote {
-  padding: 13px 13px;
-  width: 50%;
-  margin-bottom: 10px;
-}
-
 .fa-quote-left {
   padding-right: 0.5em;
 }

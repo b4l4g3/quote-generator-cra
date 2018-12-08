@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Quote.css'
+import './Buttons.css'
 
 class Quote extends Component {
      
