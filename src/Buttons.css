@@ -34,3 +34,15 @@
     width: 50%;
     margin-bottom: 10px;
   }
+
+  
+@media (min-width: 700px) {
+    .button-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .button-quote {
+      width: 150px;
+    }
+  }

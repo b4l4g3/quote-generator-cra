@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Quote from './Quote';
 import Buttons from './Buttons';
-import rng from './helper.js';
+import {rng, tweet, tumblr} from './helper.js';
 import db from './db.json';
 
 class App extends Component {
@@ -19,6 +19,7 @@ class App extends Component {
     this.getQuote();
   }
 
+ 
   getQuote() {
     this.setState({
       quotes: db.quotes[rng(101)],
@@ -32,15 +33,19 @@ class App extends Component {
     const color = {
       backgroundColor: this.state.randomColor
     }
+    const tweetPost = function() {
+      tweet(quotes)
+    }
+    const tumblrPost = () => tumblr(quotes)
     if (error) {
       return <div>Error: {error.message}</div>;
     } else {
       return (
-        <div class="container" style={color}>
+        <div className="container" style={color}>
           <main>
             <div>
               <Quote quoteText={quotes.quote} quoteAuthor={quotes.author} />
-              <Buttons buttonColor={color} buttonNewQuote={getQuote} />
+              <Buttons buttonColor={color} buttonNewQuote={getQuote} tweetFunc={tweetPost} tumblrFunc={tumblrPost} />
             </div>
           </main>
         </div>

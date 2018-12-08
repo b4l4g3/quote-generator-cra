@@ -90,15 +90,6 @@ footer {
     flex-grow: 0;
     max-width: 700px;
   }
-
-  .button-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .button-quote {
-    width: 150px;
-  }
 }
 @media (max-width: 350px) {
   main {

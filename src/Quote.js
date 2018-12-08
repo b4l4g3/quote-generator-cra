@@ -8,9 +8,9 @@ class Quote extends Component {
     const quoteText = this.props.quoteText;
     const quoteAuthor = this.props.quoteAuthor;
       return (
-        <div>
-          <p class="quoteText"><i class="fa fa-quote-left"></i><span class="js-quoteText">{quoteText}</span></p>
-          <p class="quoteAuthor js-quoteAuthor">{quoteAuthor}</p>
+        <div className="quote-container">
+          <p className="quoteText"><i className="fa fa-quote-left"></i><span className="js-quoteText">{quoteText}</span></p>
+          <p className="quoteAuthor js-quoteAuthor">{quoteAuthor}</p>
         </div>
       );
     
