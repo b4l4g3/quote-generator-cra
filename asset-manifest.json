@@ -1,13 +1,16 @@
 {
-  "main.css": "/static/css/main.612625c6.chunk.css",
-  "main.js": "/static/js/main.16517131.chunk.js",
-  "main.js.map": "/static/js/main.16517131.chunk.js.map",
-  "static/js/1.1d714d22.chunk.js": "/static/js/1.1d714d22.chunk.js",
-  "static/js/1.1d714d22.chunk.js.map": "/static/js/1.1d714d22.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.612625c6.chunk.css.map": "/static/css/main.612625c6.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.1479037619902091fdce27f81418c932.js": "/precache-manifest.1479037619902091fdce27f81418c932.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/quote-generator-cra/static/css/main.a1b6f559.chunk.css",
+  "main.js": "/quote-generator-cra/static/js/main.2aa3d6f8.chunk.js",
+  "main.js.map": "/quote-generator-cra/static/js/main.2aa3d6f8.chunk.js.map",
+  "static/css/1.720518ad.chunk.css": "/quote-generator-cra/static/css/1.720518ad.chunk.css",
+  "static/js/1.1b35fcd9.chunk.js": "/quote-generator-cra/static/js/1.1b35fcd9.chunk.js",
+  "static/js/1.1b35fcd9.chunk.js.map": "/quote-generator-cra/static/js/1.1b35fcd9.chunk.js.map",
+  "runtime~main.js": "/quote-generator-cra/static/js/runtime~main.8cda6f36.js",
+  "runtime~main.js.map": "/quote-generator-cra/static/js/runtime~main.8cda6f36.js.map",
+  "static/media/font-awesome.min.css": "/quote-generator-cra/static/media/fontawesome-webfont.674f50d2.eot",
+  "static/css/main.a1b6f559.chunk.css.map": "/quote-generator-cra/static/css/main.a1b6f559.chunk.css.map",
+  "static/css/1.720518ad.chunk.css.map": "/quote-generator-cra/static/css/1.720518ad.chunk.css.map",
+  "index.html": "/quote-generator-cra/index.html",
+  "precache-manifest.d06036fcabfe1d9ba0f980a9ae616fd3.js": "/quote-generator-cra/precache-manifest.d06036fcabfe1d9ba0f980a9ae616fd3.js",
+  "service-worker.js": "/quote-generator-cra/service-worker.js"
 }
