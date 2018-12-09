@@ -43,7 +43,7 @@ const QuoteButton = styled(Button)`
   }
 `
 
-class Quote extends Component {
+class Buttons extends Component {
   render() {
     const buttonColor = this.props.buttonColor;
     const buttonNewQuote = this.props.buttonNewQuote;
@@ -70,4 +70,4 @@ class Quote extends Component {
   }
 }
 
-export default Quote;
+export default Buttons;
