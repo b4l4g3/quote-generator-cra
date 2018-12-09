@@ -1,9 +1,40 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Reset.css';
 import Quote from './Quote';
 import Buttons from './Buttons';
-import {rng, tweet, tumblr} from './helper.js';
+import { rng, tweet, tumblr } from './helper.js';
 import db from './db.json';
+import styled from 'styled-components'
+
+const Container = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: ${props => props.bgColor};
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+`
+const Main = styled.main`
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 3.5px;
+
+  @media (min-width: 700px) {
+      flex-grow: 0;
+      max-width: 700px;
+  }
+
+  @media (max-width: 350px) {
+      justify-content: flex-start;
+  }
+`
 
 class App extends Component {
   constructor(props) {
@@ -19,7 +50,7 @@ class App extends Component {
     this.getQuote();
   }
 
- 
+
   getQuote() {
     this.setState({
       quotes: db.quotes[rng(101)],
@@ -28,29 +59,30 @@ class App extends Component {
   }
 
   render() {
-    const { error, quotes } = this.state;
+    const quotes = this.state.quotes;
     const getQuote = this.getQuote;
     const color = {
       backgroundColor: this.state.randomColor
     }
-    const tweetPost = function() {
+    const fAws = {
+      paddingRight: '0.5em',
+      fontSize: '1.4em',
+      color: `${this.state.randomColor}`
+    }
+    const tweetPost = function () {
       tweet(quotes)
     }
-    const tumblrPost = () => tumblr(quotes)
-    if (error) {
-      return <div>Error: {error.message}</div>;
-    } else {
+    const tumblrPost = () => tumblr(quotes);
       return (
-        <div className="container" style={color}>
-          <main>
+        <Container bgColor={this.state.randomColor}>
+          <Main>
             <div>
-              <Quote quoteText={quotes.quote} quoteAuthor={quotes.author} />
+              <Quote quoteText={quotes.quote} quoteAuthor={quotes.author} iconStyle={fAws} />
               <Buttons buttonColor={color} buttonNewQuote={getQuote} tweetFunc={tweetPost} tumblrFunc={tumblrPost} />
             </div>
-          </main>
-        </div>
+          </Main>
+        </Container>
       );
-    }
   }
 }
 

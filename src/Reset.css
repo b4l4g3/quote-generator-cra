@@ -52,49 +52,4 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
-
-main {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  padding: 10px;
-  background-color: white;
-  border-radius: 3.5px;
-}
-
-
-.fa-quote-left {
-  padding-right: 0.5em;
-}
-
-footer {
-  color: black;
-  visibility: hidden;
-}
-
-@media (min-width: 700px) {
-  main {
-    flex-grow: 0;
-    max-width: 700px;
-  }
-}
-@media (max-width: 350px) {
-  main {
-    justify-content: flex-start;
-  }
-}
-
 /*# sourceMappingURL=app.css.map */
