@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './Reset.css';
+import './../Reset.css';
 import Quote from './Quote';
 import Buttons from './Buttons';
-import { rng, tweet, tumblr } from './helper.js';
-import db from './db.json';
+import { rng, tweet, tumblr } from './../helper.js';
+import db from './../db.json';
 import styled, {ThemeProvider} from 'styled-components'
 
 const Container = styled.div`
