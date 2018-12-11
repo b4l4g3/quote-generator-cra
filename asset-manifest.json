@@ -1,16 +1,16 @@
 {
   "main.css": "/quote-generator-cra/static/css/main.a1b6f559.chunk.css",
-  "main.js": "/quote-generator-cra/static/js/main.2aa3d6f8.chunk.js",
-  "main.js.map": "/quote-generator-cra/static/js/main.2aa3d6f8.chunk.js.map",
+  "main.js": "/quote-generator-cra/static/js/main.168db99d.chunk.js",
+  "main.js.map": "/quote-generator-cra/static/js/main.168db99d.chunk.js.map",
   "static/css/1.720518ad.chunk.css": "/quote-generator-cra/static/css/1.720518ad.chunk.css",
-  "static/js/1.1b35fcd9.chunk.js": "/quote-generator-cra/static/js/1.1b35fcd9.chunk.js",
-  "static/js/1.1b35fcd9.chunk.js.map": "/quote-generator-cra/static/js/1.1b35fcd9.chunk.js.map",
+  "static/js/1.6e0fa063.chunk.js": "/quote-generator-cra/static/js/1.6e0fa063.chunk.js",
+  "static/js/1.6e0fa063.chunk.js.map": "/quote-generator-cra/static/js/1.6e0fa063.chunk.js.map",
   "runtime~main.js": "/quote-generator-cra/static/js/runtime~main.8cda6f36.js",
   "runtime~main.js.map": "/quote-generator-cra/static/js/runtime~main.8cda6f36.js.map",
-  "static/media/font-awesome.min.css": "/quote-generator-cra/static/media/fontawesome-webfont.674f50d2.eot",
+  "static/media/font-awesome.min.css": "/quote-generator-cra/static/media/fontawesome-webfont.af7ae505.woff2",
   "static/css/main.a1b6f559.chunk.css.map": "/quote-generator-cra/static/css/main.a1b6f559.chunk.css.map",
   "static/css/1.720518ad.chunk.css.map": "/quote-generator-cra/static/css/1.720518ad.chunk.css.map",
   "index.html": "/quote-generator-cra/index.html",
-  "precache-manifest.d06036fcabfe1d9ba0f980a9ae616fd3.js": "/quote-generator-cra/precache-manifest.d06036fcabfe1d9ba0f980a9ae616fd3.js",
+  "precache-manifest.6e61ff9fae472492d865185d8a312b26.js": "/quote-generator-cra/precache-manifest.6e61ff9fae472492d865185d8a312b26.js",
   "service-worker.js": "/quote-generator-cra/service-worker.js"
 }
