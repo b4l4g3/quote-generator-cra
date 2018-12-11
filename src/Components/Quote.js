@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -21,19 +21,13 @@ const QuoteAuthor = styled.p`
   align-self: flex-end;
 `
 
-class Quote extends Component {
-  render() {
-    const iconStyle = this.props.iconStyle;
-    const quoteText = this.props.quoteText;
-    const quoteAuthor = this.props.quoteAuthor;
-      return (
-        <QuoteContainer>
-          <QuoteText><i className={'fa fa-quote-left'} style={iconStyle}></i>{quoteText}</QuoteText>
-          <QuoteAuthor>{quoteAuthor}</QuoteAuthor>
-        </QuoteContainer>
-      );
-    
-  }
+function Quote({ iconStyle, quoteText, quoteAuthor }) {
+  return (
+    <QuoteContainer>
+      <QuoteText><i className={'fa fa-quote-left'} style={iconStyle}></i>{quoteText}</QuoteText>
+      <QuoteAuthor>{quoteAuthor}</QuoteAuthor>
+    </QuoteContainer>
+  );
 }
 
 export default Quote;
